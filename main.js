@@ -9,5 +9,10 @@ function sendIosAction() {
 }
 
 function sendAndroidAction() {
-	//
+	EBTJavaInterface.registrationSucceeded();
+}
+
+function sendHybridAction() {
+	sendIosAction();
+	sendAndroidAction();
 }
